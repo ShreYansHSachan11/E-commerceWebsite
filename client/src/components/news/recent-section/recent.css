@@ -1,0 +1,111 @@
+.recent:nth-child(1) { grid-area: main; }
+.recent:nth-child(2) { grid-area: breaking1; }
+.recent:nth-child(3) { grid-area: breaking2; }
+.recent:nth-child(4){ grid-area: breaking3; }
+.recent:nth-child(5){ grid-area: breaking4; }
+.recent-box {
+    /* margin-top: 100px; */
+    width:90vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      'main main main main breaking1 '
+      'main main main main breaking2 '
+      'main main main main breaking3 ';
+      
+    gap: 10px;
+    background-color: #2195f360;
+    padding: 10px;
+    z-index: -2;
+    height:1200px;
+  }
+  .recent .newsimg{
+    height:300px;
+    width:300px;
+    filter: brightness(0.6);
+    
+   
+  }
+  .recent h1{
+    font-size:20px;
+    color:white;
+    z-index: 2;
+    position: relative;
+    top:280px;
+    width:260px;
+
+  }
+  .recent{
+    height: 100px;
+  }
+  .recent .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100px; */
+    margin:0;
+  }
+  .recent p{
+    display: none;
+  }
+  .recent:nth-child(1) .item{
+    margin:0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent:nth-child(1) .newsimg{
+    height:500px;
+    width:1100px;
+    position:static;
+    filter:brightness(0.9);
+  }
+  .recent:nth-child(1) h1{
+    font-size:40px;
+    color: black;
+    position: static;
+    width: 1100px;
+  }
+  .recent:nth-child(1) p{
+    visibility: visible;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  /* .recent-box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .recent-box .item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+  }
+  .recent-box .item:nth-child(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .recent-box .item:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .recent-box .item:nth-child(4) {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  } */
+ 
+
+  
